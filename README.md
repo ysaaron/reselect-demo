@@ -5,7 +5,7 @@ To compare getting data with sorting/paginating between Reselect and normal func
 According to [Computing Derived Data](http://redux.js.org/docs/recipes/ComputingDerivedData.html)
 
 ## Why Reselect?
-In my opinion, reducer have to be simple and pure, thus I'll do filter/paginate/sort when the state is mapped to component.
+In my opinion, reducer have to be simple and pure, thus I'll do filtering/paginating/sorting when the state is mapped to component.
 
 But the partial state is updated, the visible data will recalculate again.
 
