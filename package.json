@@ -1,0 +1,16 @@
+{
+  "name": "reselect-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/main.js",
+  "scripts": {
+    "result": "node ./src/main"
+  },
+  "author": "AaronYoung",
+  "license": "MIT",
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "lodash": "^4.15.0",
+    "reselect": "^2.5.3"
+  }
+}
