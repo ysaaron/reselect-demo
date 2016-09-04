@@ -21,4 +21,6 @@ It does less caculation and makes reducer simpler.
 To compare getting visible data between Reselect and normal function.
 
 ##Discussion
-If the content has not fluent or incorrect in somwhere, please let me know. Thank for your reading.
+If the content has not fluent or incorrect in somwhere, please let me know.
+
+Thank for your reading.
