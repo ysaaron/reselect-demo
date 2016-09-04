@@ -11,7 +11,7 @@ But the partial state is updated, the visible data will recalculate again.
 
 For example, when user back to previous page, the component will recalculate the visible data from state, it seems to be wasted.
 
-Reselect allow you to split state into partial selector and combine it to be a root selector, the selector will compare the state is changed, and decide whether the data need to be recalculated.
+Reselect allow you to split state into partial selector and combine all selectors to be a root selector, the selector will compare the state is changed, and decide whether the data need to be recalculated.
 
 It does less caculation and makes reducer simpler.
 
