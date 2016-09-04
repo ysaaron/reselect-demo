@@ -17,3 +17,6 @@ Reselect則可記憶前一次state與下一次state是否一致，若一致則�
 
 ###`npm run result`
 比較Reselect及普通的function取得資料所需時間
+
+##Discussion
+希望這邊有幫助到大家，如果文中有任何可以改善或錯誤的地方還麻煩大家一起來討論，並且也可以幫助我更正觀念，感謝!
