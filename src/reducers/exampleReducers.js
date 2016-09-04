@@ -16,7 +16,9 @@ const initialState = () => {
       end: 10
     }
   });
-  const initialDataSourceState = Immutable.fromJS(source);
+  const initialDataSourceState = Immutable //to change list data to map like { _id: data }
+                                  .fromJS(source)
+                                  .reduce((prev, curr) => prev.set(curr.get('_id'), curr), Immutable.Map());
 
   return {
     filter: initialFilterState,

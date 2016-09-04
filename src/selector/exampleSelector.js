@@ -11,7 +11,7 @@ const getDataState = exampleReducers.getDataState;
 
 /**
  * Sorting immutable data source
- * @param  {List} source           immutable testing data source
+ * @param  {Map} source           immutable data source
  * @param  {string} sortingKey       property of data
  * @param  {string} orderByCondition 'asc' or 'desc'
  * @return {List}                  immutable testing data source with sorting
@@ -24,7 +24,7 @@ const sortingData = (source, sortingKey, orderByCondition) => {
 
 /**
  * Paginating data from sortingSelector
- * @param  {List} sortedData immutable testing data source with sorting
+ * @param  {List} sortedData immutable data source with sorting
  * @param  {number} start
  * @param  {number} end
  * @return {array}            sorting data with pagination and converting Immutable.List to array
