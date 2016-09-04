@@ -9,7 +9,7 @@ In my opinion, reducer have to be simple and pure, thus I'll do filtering/pagina
 
 The partial state is updated or component mount again without state changing, but the visible data will also recalculate again.
 
-For example, when user back to previous page, the component will recalculate the visible data from state, it seems to be wasted.
+For example, when user back to previous page, the component will recalculate the visible data from state even if state isn't changed, it seems to be wasted.
 
 Reselect allow you to split state into partial selector and combine all selectors to be a root selector, the selector will compare the state is changed, and decide whether the data need to be recalculated.
 
