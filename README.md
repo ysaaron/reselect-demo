@@ -1,5 +1,5 @@
 # reselect-demo
-To compare filtering/sorting data with "Reselect" and normal function
+To compare getting data with sorting/paginating between Reselect and normal function
 
 ## What is Reselect?
 According to [Computing Derived Data](http://redux.js.org/docs/recipes/ComputingDerivedData.html)
