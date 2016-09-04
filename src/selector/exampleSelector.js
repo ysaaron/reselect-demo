@@ -10,7 +10,7 @@ const getPaginationState = exampleReducers.getPaginationState;
 const getDataState = exampleReducers.getDataState;
 
 /**
- * sorting immutable data source
+ * Sorting immutable data source
  * @param  {List} source           immutable testing data source
  * @param  {string} sortingKey       property of data
  * @param  {string} orderByCondition 'asc' or 'desc'
@@ -23,7 +23,7 @@ const sortingData = (source, sortingKey, orderByCondition) => {
 }
 
 /**
- * paginating data from sortingSelector
+ * Paginating data from sortingSelector
  * @param  {List} sortedData immutable testing data source with sorting
  * @param  {number} start
  * @param  {number} end
@@ -31,16 +31,22 @@ const sortingData = (source, sortingKey, orderByCondition) => {
  */
 const pagination = (sortedData, start, end) => sortedData.slice(start, end).toList().toJS()
 
+/**
+ * Partial selector only to do sorting
+ */
 const sortingSelector = createImmutableEqualsSelector(
   [
-    getDataState,
+    getDataState, // get data source
     getSortingState
   ],
   (dataState, sortingCondition) => sortingData(dataState, sortingCondition.get('sortingKey'), sortingCondition.get('orderBy'))
 )
+/**
+ * Root selector to paginate data from sortingSelector
+ */
 const paginationSelector = createImmutableEqualsSelector(
   [
-    sortingSelector,
+    sortingSelector, // bind selector to be new data source
     getPaginationState
   ],
   (sortedData, paginationCondition) => pagination(sortedData, paginationCondition.get('start'), paginationCondition.get('end'))

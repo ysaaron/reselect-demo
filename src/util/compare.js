@@ -6,7 +6,7 @@ const isUndefined = require('lodash/isUndefined');
 const isNullOrUndefined = (v) => isNull(v) || isUndefined(v)
 
 /**
- * basic compare
+ * Simple compare function
  * @param  {(string|number|boolean|date)} v
  * @param  {(string|number|boolean|date)} k
  * @return {number}   comparing result with 0, 1, -1

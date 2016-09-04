@@ -2,6 +2,9 @@ const Immutable = require('immutable');
 const source = require('../datasource/data');
 const compare = require('../util/compare');
 
+/**
+ * To generate an example state
+ */
 const initialState = () => {
   const initialFilterState = Immutable.fromJS({
     sortingCondition: {
@@ -28,9 +31,9 @@ const getPaginationState = (state) => state.filter.get('pagination')
 const getDataState = (state) => state.data
 
 /**
- * sorting and paginating immutable data source
+ * Sorting and paginating immutable data source
  * @param  {any} state root state tree
- * @return {array}       data result with array
+ * @return {Array}       data result with array
  */
 const getVisibleData = (state) => {
   let sortingKey = state.filter.getIn(['sortingCondition', 'sortingKey']),
