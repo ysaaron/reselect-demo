@@ -1,10 +1,10 @@
 # reselect-demo
 To compare getting data with sorting/paginating between Reselect and normal function
 
-## What is Reselect?
+## What is Reselect
 According to [Computing Derived Data](http://redux.js.org/docs/recipes/ComputingDerivedData.html)
 
-## Why Reselect?
+## Why Reselect
 In my opinion, reducer have to be simple and pure, thus I'll do filtering/paginating/sorting when the state is mapped to component.
 
 But the partial state is updated, the visible data will recalculate again.
