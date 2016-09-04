@@ -7,7 +7,7 @@ According to [Computing Derived Data](http://redux.js.org/docs/recipes/Computing
 ## Why Reselect
 In my opinion, reducer have to be simple and pure, thus I'll do filtering/paginating/sorting when the state is mapped to component.
 
-But the partial state is updated, the visible data will recalculate again.
+The partial state is updated or component mount again without state changing, but the visible data will also recalculate again.
 
 For example, when user back to previous page, the component will recalculate the visible data from state, it seems to be wasted.
 
